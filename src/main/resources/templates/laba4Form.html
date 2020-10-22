@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <title>Лабораторна №4</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center mt-3">
+            <h1>Лабораторна робота №4</h1>
+        </div>
+        <div class="col-md-12">
+            <form action="/laba4/add" method="POST">
+                <h3>Додати студента</h3>
+                <div class="row text-center mt-2 mb-2">
+                    <div class="col-md-4">
+                        <input type="text" name="name" class="form-control" placeholder="ПІБ" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="number" name="rateOne" class="form-control" placeholder="Оцінка №1" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="number" name="rateTwo" class="form-control" placeholder="Оцінка №2" required>
+                    </div>
+                </div>
+                <button class="btn btn-primary float-right ml-2" type="submit">Додати запис</button>
+                <a class="btn btn-secondary float-right" href="/laba4/results">Переглянути результати</a>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
